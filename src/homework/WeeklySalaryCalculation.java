@@ -33,7 +33,7 @@ public class WeeklySalaryCalculation {
 
         }
 
-        else if(totalyWorkingHour > 40 && totalyWorkingHour < 50 ) {
+        if(totalyWorkingHour > 40 && totalyWorkingHour < 50 ) {
 
             double overTotlyWorkingWeekdaysSalary = (weekdaysHours - 40);
 

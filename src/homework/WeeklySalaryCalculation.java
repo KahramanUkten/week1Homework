@@ -17,23 +17,23 @@ public class WeeklySalaryCalculation {
 
         scanner.close();
 
-        Double hourlyWage = weeklySalary / 40.0 ;
-        int totlyWorkingHour = weekdaysHours + weekendsHours;
+        double hourlyWage = weeklySalary / 40.0 ;
+        int totalyWorkingHour = weekdaysHours + weekendsHours;
 
-        if( totlyWorkingHour == 40){
+        if( totalyWorkingHour == 40){
 
             System.out.println("Your weekly salary = " + weeklySalary);
 
         }
 
-        else if(totlyWorkingHour < 40){
+        else if(totalyWorkingHour < 40){
 
-            double lessHourWorkingSalary = hourlyWage * totlyWorkingHour;
+            double lessHourWorkingSalary = hourlyWage * totalyWorkingHour;
             System.out.println("Your weekly salary = " + lessHourWorkingSalary );
 
         }
 
-        else if(totlyWorkingHour > 40 && totlyWorkingHour < 50 ) {
+        else if(totalyWorkingHour > 40 && totalyWorkingHour < 50 ) {
 
             double overTotlyWorkingWeekdaysSalary = (weekdaysHours - 40);
 
@@ -47,7 +47,7 @@ public class WeeklySalaryCalculation {
                 System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary + overHourWorkingWeekdaysSalary));
             }
         }
-       else if(totlyWorkingHour >= 50) {
+       else if(totalyWorkingHour >= 50) {
 
             double over50TotlyWorkingWeekdaysSalary = (weekdaysHours - 40);
 

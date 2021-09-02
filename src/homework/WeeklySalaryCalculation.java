@@ -22,14 +22,14 @@ public class WeeklySalaryCalculation {
 
         if( totalyWorkingHour == 40){
 
-            System.out.println("Your weekly salary = " + weeklySalary);
+            System.out.println("Your weekly salary = " + weeklySalary + "$");
 
         }
 
         else if(totalyWorkingHour < 40){
 
             double lessHourWorkingSalary = hourlyWage * totalyWorkingHour;
-            System.out.println("Your weekly salary = " + lessHourWorkingSalary );
+            System.out.println("Your weekly salary = " + lessHourWorkingSalary + "$" );
 
         }
 
@@ -39,12 +39,12 @@ public class WeeklySalaryCalculation {
 
             if (overTotlyWorkingWeekdaysSalary <= 0) {
                 double overHourWorkingWeekendsSalary = (weekendsHours) * (hourlyWage * 2);
-                System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary));
+                System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary) + "$");
             }
             else {
                 double overHourWorkingWeekdaysSalary = (weekdaysHours - 40) * (hourlyWage * 1.5);
                 double overHourWorkingWeekendsSalary = (weekendsHours) * (hourlyWage * 2);
-                System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary + overHourWorkingWeekdaysSalary));
+                System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary + overHourWorkingWeekdaysSalary) + "$");
             }
         }
        else if(totalyWorkingHour >= 50) {
@@ -53,12 +53,12 @@ public class WeeklySalaryCalculation {
 
             if (over50TotlyWorkingWeekdaysSalary <= 0) {
                 double overHourWorkingWeekendsSalary = (weekendsHours) * (hourlyWage * 2);
-                System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary + 500));
+                System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary + 500) + "$");
             }
             else {
                 double overHourWorkingWeekdaysSalary = (weekdaysHours - 40) * (hourlyWage * 1.5);
                 double overHourWorkingWeekendsSalary = (weekendsHours) * (hourlyWage * 2);
-                System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary + overHourWorkingWeekdaysSalary + 500));
+                System.out.println("Your weekly salary = " + (overHourWorkingWeekendsSalary + weeklySalary + overHourWorkingWeekdaysSalary + 500) + "$");
                  }
 
             }
